@@ -1,6 +1,9 @@
 #desktop-nav {
     display: flex;
+    position: fixed;
+    background-color: #fef9f6;
     height: 75px;
+    width: -webkit-fill-available;
     padding: 0 10%;
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +12,6 @@
 }
 
 .logo {
-    z-index: 3;
     position: relative;
     display: flex;
     align-items: center;
@@ -179,6 +181,14 @@
 
     #hamburger-nav {
         display: flex;
+        position: fixed;
+        width: -webkit-fill-available;
+        background-color: #fef9f6;
     }
+}
 
+@media screen and (max-width: 600px) {
+    #hamburger-nav {
+        padding: 0 5%;
+    }
 }
